@@ -1,4 +1,5 @@
 /build
+/_CPack_Packages
 # Prerequisites
 *.d
 

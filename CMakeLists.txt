@@ -6,7 +6,7 @@ else()
   set(PATCH_NUM "1")
 endif()
 
-project(hello
+project(ip_filter
   LANGUAGES CXX
   VERSION 0.0.${PATCH_NUM}
 )
@@ -20,7 +20,7 @@ option(BUILD_TESTS "Build unittests" OFF)
 
 add_subdirectory(src)
 
-install(TARGETS sayhello RUNTIME DESTINATION bin)
+install(TARGETS ip_filter RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
